@@ -3,7 +3,7 @@ Fix *AAC in *MOV files on WAV PCM for Linux and compatibility with DaVinci Resol
 
 ___
 EN
-In order for the script to work, your Linux system must have the “ffmpeg” codec installed. It is usually not installed by default. To install, enter the command:
+In order for the script to work, the “ffmpeg” codec must be installed on your Linux system. It is usually not installed by default. To install, enter the command:
 sudo apt-get install ffmpeg
 
 Place the "sh coder.sh" script in the folder where your videos are located, whether they are *mp4 files (for example, downloaded from Youtube) or *mov files
@@ -13,7 +13,7 @@ sh coder.sh * - transcodes everything in the folder, all formats - mp4 and mov t
 sh coder.sh *mov - transcodes only mov files to *_fix.mov
 sh coder.sh *mp4 - transcodes only mp4 files to *_fix.mov
 
-Processing will be lightning fast, because the video data is not affected at all and is not re-encoded in any way, which means that the quality does not change.
+Processing will be lightning fast, because the video data is not affected at all and is not re-encoded in any way, which means that the quality does not change, is not lost.
 But the audio tracks are converted from “MPEG-4 AAC” to “PCM WAV”, thereby simply creating a copy of the video file in *MOV format with corrected audio data.
 The output file size will be larger because PCM WAV is an uncompressed format, unlike compressed "MPEG-4 AAC".
 
@@ -21,7 +21,7 @@ That's all the magic. Happy installation! Sincerely, "Denis LeadER TV".
 
 ___
 RU
-Для того чтобы скрипт работал, вашей Linux системе должен быть установлен кодек “ffmpeg". Обычно он не установлен по умолчанию. Чтобы установить, введите команду:
+Для того чтобы скрипт работал, в вашей Linux системе должен быть установлен кодек “ffmpeg". Обычно он не установлен по умолчанию. Чтобы установить, введите команду:
 sudo apt-get install ffmpeg
 
 Поместите скрипт "sh coder.sh" в папку, где лежат ваши видео, будь-то *mp4 файлы (например скачанные с Youtube) или файлы формата *mov
